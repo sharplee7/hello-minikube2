@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-minikube2
+  labels:
+    app: hello-minikube2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-minikube2
+  template:
+    metadata:
+      labels:
+        app: hello-minikube2
+    spec:
+      containers:
+        - name: hello-minikube2
+          image: sharplee7/hello-minikube2:1.0
+          #resources:
+          #  limits:
+          #    memory: "128Mi"
+          #    cpu: "500m"
+          ports:
+            - containerPort: 8080
+
