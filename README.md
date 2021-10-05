@@ -1,6 +1,7 @@
 ## 프로그램 실행 수순서
 
 ![img.png](img.png)
+
 1.  hello-minikube2 앱을 spring boot에 gradle 기반으로 작성한다.
 2.  build.gradle을 통해 컴파일 한다.
 3.  hello-minikube2.jar 파일 생성
